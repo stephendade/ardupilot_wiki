@@ -62,6 +62,13 @@ Setup for other Distributions
 
     Do not use this if you have already use the ``install-prereqs-ubuntu.sh`` script !
 
+.. warning::
+
+    Ardupilot is only built and tested on specific versions of gcc-arm. Ensure that the
+    provided gcc-arm cross-compiler (below) is used if building for STM32 targets, as the
+    cross-compiler provided by many Linux distributions (via ``apt-get`` or similar) does
+    not work in many cases.
+    
 To build for a Cube/Pixhawk target on Linux you need the
 following tools and git repositories:
 
